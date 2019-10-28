@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Form /> should match snapshot 1`] = `
+<form>
+  <label
+    htmlFor="title"
+  >
+    Nombre de la tarea
+  </label>
+  <input
+    data-testid="input-title"
+    id="title"
+    name="title"
+    type="text"
+  />
+  <button
+    type="submit"
+  >
+    Crear nueva tarea
+  </button>
+</form>
+`;

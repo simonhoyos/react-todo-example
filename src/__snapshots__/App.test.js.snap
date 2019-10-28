@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should match snapshot 1`] = `
+<div
+  className="App"
+>
+  <Tasks
+    handleEdit={[Function]}
+    handleToggleTask={[Function]}
+    tasks={
+      Array [
+        Object {
+          "done": true,
+          "id": 0,
+          "title": "una tarea",
+        },
+        Object {
+          "done": false,
+          "id": 1,
+          "title": "segunda tarea",
+        },
+        Object {
+          "done": false,
+          "id": 2,
+          "title": "tercera tarea",
+        },
+        Object {
+          "done": false,
+          "id": 3,
+          "title": "tercera tarea",
+        },
+        Object {
+          "done": false,
+          "id": 4,
+          "title": "tercera tarea",
+        },
+      ]
+    }
+  />
+  <Form
+    editingId={-1}
+    handleChange={[Function]}
+    handleSubmit={[Function]}
+    title=""
+  />
+</div>
+`;

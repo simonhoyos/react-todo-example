@@ -1,16 +1,21 @@
 import React from 'react';
-import { TasksConsumer } from '../Context';
 
-export function TaskItem({ id, title, done }) {
+export function TaskItem({ id, title, done, handleEdit, handleToggleTask }) {
   return (
-    <TasksConsumer>
-      {({ handleEdit, handleToggleTask }) => (
-        <li>
-          {title} - {done ? 'completa' : 'incompleta'}
-          <button onClick={() => handleEdit(id, title, done)}>Editar</button>
-          <button onClick={() => handleToggleTask(id)}>Completar</button>
-        </li>
-      )}
-    </TasksConsumer>
+    <li>
+      {title} - {done ? 'completa' : 'incompleta'}
+      <button
+        onClick={() => handleEdit(id, title, done)}
+        data-testid="edit-button"
+      >
+        Editar
+      </button>
+      <button
+        onClick={() => handleToggleTask(id)}
+        data-testid="toggle-button"
+      >
+        Completar
+      </button>
+    </li>
   );
 }
